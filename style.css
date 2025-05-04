@@ -47,7 +47,7 @@ body {
     gap: 1rem;
   }
   
-  .about-pic {
+  .profile-pic {
     width: 120px;
     height: 120px;
     object-fit: cover;
@@ -56,20 +56,21 @@ body {
     display: block;
     margin: 1rem auto;
   }
-  
 
   nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;        /* CENTER links on desktop */
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     gap: 1rem;
     scroll-behavior: smooth;
+    max-width: 100%;
   }
+  
   
   
   
