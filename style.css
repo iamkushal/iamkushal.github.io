@@ -47,21 +47,27 @@ body {
     gap: 1rem;
   }
   
-  .header-pic {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
+  .profile-pic {
+    max-width: 180px;
+    border-radius: 100px;
+    display: block;
+    margin: 1rem auto;
+    border: 4px solid #ccc;
   }
-  
+
   nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;             /* Don't wrap on small screens */
+    overflow-x: auto;              /* Scroll horizontally if needed */
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    scroll-behavior: smooth;
   }
+  
   
   nav ul li {
     margin: 0 1rem;
@@ -161,12 +167,13 @@ body {
   
   @media (max-width: 600px) {
     nav ul {
-      flex-direction: column;
-      align-items: center;
+      justify-content: flex-start;
+      padding: 0.5rem 1rem;
     }
   
     nav ul li {
-      margin: 0.5rem 0;
+      margin: 0 0.5rem;
+      white-space: nowrap;
     }
   
     #theme-toggle {
@@ -174,4 +181,5 @@ body {
       margin-top: 1rem;
     }
   }
+  
   
