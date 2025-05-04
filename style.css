@@ -38,6 +38,21 @@ body {
     cursor: pointer;
     color: #fff;
   }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .header-pic {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+  }
   
   nav ul {
     list-style: none;
