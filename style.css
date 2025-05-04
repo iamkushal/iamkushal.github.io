@@ -12,46 +12,31 @@ body {
     color: #ddd;
   }
   
-  .dark-mode a {
-    color: #00bfff;
-  }
-  
   header {
     background-color: #1e1e2f;
     color: #fff;
     padding: 2.5rem 1rem;
     text-align: center;
+    position: relative;
   }
   
   .dark-mode header {
     background-color: #222;
   }
   
-  .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .header-title {
-    flex-grow: 1;
-  }
-  
-  .header-pic {
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
-  }
-  
   #theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     background: none;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
     color: #fff;
+  }
+  
+  .dark-mode #theme-toggle {
+    color: #f0f0f0;
   }
   
   nav ul {
