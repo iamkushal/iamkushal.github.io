@@ -7,7 +7,7 @@ body {
   }
   
   header {
-    background-color: #1a1a1a;
+    background-color: #1e1e2f;
     color: #fff;
     padding: 2.5rem 1rem;
     text-align: center;
@@ -33,32 +33,43 @@ body {
   }
   
   nav ul li {
-    margin: 0 1.2rem;
+    margin: 0 1rem;
   }
   
   nav ul li a {
-    color: #00b4d8;
+    color: #00c2ff;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  h2 {
+    color: #004080;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  h3 {
+    color: #0077b6;
   }
   
   section {
     padding: 2rem 1rem;
     max-width: 900px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-  
-  h2 {
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
+    margin: auto;
   }
   
   ul {
     padding-left: 1.2rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1.2rem;
+    background-color: #1e1e2f;
+    color: #fff;
+    font-size: 0.9rem;
   }
   
   a {
@@ -70,24 +81,28 @@ body {
     text-decoration: underline;
   }
   
-  footer {
-    text-align: center;
-    padding: 1.2rem;
-    background-color: #1a1a1a;
-    color: #fff;
-    font-size: 0.9rem;
-  }
-  
-  article {
-    margin-bottom: 2rem;
-  }
-  
   img.profile-pic {
     max-width: 180px;
     border-radius: 100px;
     display: block;
     margin: 1rem auto;
-    border: 4px solid #ddd;
+    border: 4px solid #ccc;
+  }
+  
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-icons a {
+    color: #1a1a1a;
+  }
+  
+  .contact-icons a:hover {
+    color: #0077cc;
   }
   
   @media (max-width: 600px) {
